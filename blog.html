@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+	<title>Rushiraj Blog</title>
+
+	<meta charset="utf-8">
+	<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="description" content="">
+
+	<!-- Google Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Barlow:400,600%7COpen+Sans:400,400i,700' rel='stylesheet'>
+
+	<!-- Css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/font-icons.css" />
+	<link rel="stylesheet" href="revolution/css/settings.css" />
+	<link rel="stylesheet" href="css/style.css" />
+
+	<!-- Favicons -->
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<link rel="apple-touch-icon" href="img/apple-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/a.png">
+
+	
+	<style>
+		.container {
+			max-width: 800px;
+			margin: 50px auto;
+			padding: 20px;
+			text-align: justify;
+
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+
+		h1 {
+			text-align: center;
+			color: #333;
+		}
+
+		.box {
+
+			padding: 20px;
+			background-color: #f9f9f9;
+			margin-top: 20px;
+		}
+
+		p {
+			margin: 0;
+			line-height: 1.6;
+			color: #555;
+
+		}
+
+		.page-title {
+			background-size: cover;
+			background-position: center;
+			width: 100%;
+			height: 600px;
+		}
+
+		.page-title__title {
+			font-size: 2rem;
+		}
+
+		@media (max-width: 768px) {
+			.page-title {
+				height: 400px;
+			}
+
+			.page-title__title {
+				font-size: 1.5rem;
+			}
+		}
+
+		@media (max-width: 480px) {
+			.page-title {
+				height: 300px;
+			}
+
+			.page-title__title {
+				font-size: 1.2rem;
+			}
+		}
+
+		.page-title {
+			width: 100%;
+			height: 600px;
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			position: relative;
+		}
+
+		.bg-dark-overlay::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color:(0, 0, 0, 0.5);
+			/* Dark overlay */
+			z-index: 0;
+		}
+
+		@media (max-width: 1200px) {
+			.page-title {
+				height: 500px;
+			}
+		}
+
+		@media (max-width: 992px) {
+			.page-title {
+				height: 400px;
+			}
+		}
+
+		@media (max-width: 768px) {
+			.page-title {
+				height: 300px;
+			}
+		}
+
+		@media (max-width: 576px) {
+			.page-title {
+				height: 200px;
+			}
+		}
+
+		.page-title__holder {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			height: 100%;
+			position: relative;
+			z-index: 1;
+		}
+
+		.page-title__title {
+			color:;
+			font-size: 2rem;
+			text-shadow: (0, 0, 0, 0.5);
+		}
+
+		.container {
+			width: 100%;
+			padding-right: 15px;
+			padding-left: 15px;
+			margin-right: auto;
+			margin-left: auto;
+		}
+
+		@media (min-width: 576px) {
+			.container {
+				max-width: 540px;
+			}
+		}
+
+		@media (min-width: 768px) {
+			.container {
+				max-width: 720px;
+			}
+		}
+
+		@media (min-width: 992px) {
+			.container {
+				max-width: 960px;
+			}
+		}
+
+		@media (min-width: 1200px) {
+			.container {
+				max-width: 1140px;
+			}
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<!-- Preloader -->
+	<div class="loader-mask">
+		<div class="loader">
+			"Loading..."
+		</div>
+	</div>
+
+	<main class="main-wrapper">
+
+		<!-- Navigation -->
+		<header class="nav">
+			<div class="nav__holder nav--sticky ">
+				<div class="container-fluid nav__container nav__container--side-padding">
+					<div class="flex-parent">
+
+						<div class="nav__header">
+							<!-- Logo -->
+							<a href="index.html" class="logo-container flex-child ">
+								<img src="img/Rushiraj Logo.png"
+									srcset="img/Rushiraj Logo.png 1x, img/Rushiraj Logo.png 2x" alt="logo">
+
+							</a>
+
+							<!-- Mobile toggle -->
+							<button type="button" class="nav__icon-toggle" id="nav__icon-toggle" data-toggle="collapse"
+								data-target="#navbar-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="nav__icon-toggle-bar"></span>
+								<span class="nav__icon-toggle-bar"></span>
+								<span class="nav__icon-toggle-bar"></span>
+							</button>
+						</div>
+
+						<!-- Navbar -->
+						<nav id="navbar-collapse" class="nav__wrap collapse navbar-collapse">
+							<ul class="nav__menu">
+								<li>
+									<a href="index.html" aria-haspopup="true">Home</a>
+									<!-- <i class="ui-arrow-down nav__dropdown-trigger" role="button" aria-haspopup="true" aria-expanded="false"></i> -->
+								</li>
+								<li>
+									<a href="about.html" aria-haspopup="true">About Us</a>
+									<!-- <i class="ui-arrow-down nav__dropdown-trigger" role="button" aria-haspopup="true" aria-expanded="false"></i> -->
+								</li>
+								<li>
+									<a href="residentisi- completed.html" aria-haspopup="true">Projects</a>
+									<!--<i class="ui-arrow-down nav__dropdown-trigger" role="button" aria-haspopup="true" aria-expanded="false"></i>-->
+
+								</li>
+								<li>
+									<a href="Highland.html" aria-haspopup="true">Project Highlands</a>
+									<!--	<i class="ui-arrow-down nav__dropdown-trigger" role="button" aria-haspopup="true" aria-expanded="false"></i>-->
+
+								</li>
+								<li>
+									<a href="zenith.html" aria-haspopup="true">Project Zenith</a>
+									<!--	<i class="ui-arrow-down nav__dropdown-trigger" role="button" aria-haspopup="true" aria-expanded="false"></i>-->
+
+								</li>
+
+
+
+								<li>
+									<a href="blog.html" aria-haspopup="true">Blog</a>
+									<!-- <i class="ui-arrow-down nav__dropdown-trigger" role="button" aria-haspopup="true" aria-expanded="false"></i> -->
+									<!-- <ul class="nav__dropdown-menu">
+										<li><a href="blog-masonry.html">Blog Masonry</a></li>
+										<li><a href="blog.html">Blog Standard</a></li>
+										<li><a href="single-post.html">Single Post</a></li>
+									</ul> -->
+								</li>
+								<li>
+									<a href="contact.html" aria-haspopup="true">Contact Us</a>
+									<!-- <i class="ui-arrow-down nav__dropdown-trigger" role="button" aria-haspopup="true" aria-expanded="false"></i> -->
+								</li>
+							</ul> <!-- end menu -->
+							<div class="nav__phone nav__phone--mobile d-lg-none">
+								<span class="nav__phone-text">Call us:</span>
+								<a href="tel:1-800-995-3959" class="nav__phone-number">+91 9604734133</a>
+							</div>
+
+							<div class="nav__socials nav__socials--mobile d-lg-none">
+								<div class="socials">
+									<div class="socials">
+
+										<a href="https://www.facebook.com/rushirajgroup/" class="social social-facebook"
+											aria-label="facebook" title="facebook" target="_blank"><i
+												class="ui-facebook"></i></a>
+
+										<a href="https://www.instagram.com/rushirajgroup?igsh=bDFxNXkzZ2VxYTB3"
+											class="social social-instagram" aria-label="instagram" title="instagram"
+											target="_blank"><i class="ui-instagram"></i></a>
+									</div>
+								</div>
+							</div>
+						</nav> <!-- end nav-wrap -->
+
+						<div class="nav__phone nav--align-right d-none d-lg-block" style="width: 246px;">
+							<span class="nav__phone-text">Call us:</span>
+							<a href="tel:1-800-995-3959" class="nav__phone-number">+91 9604734133</a>
+						</div>
+
+						<div class="nav__socials d-none d-lg-block">
+							<div class="socials">
+
+								<a href="https://www.facebook.com/rushirajgroup/" class="social social-facebook"
+									aria-label="facebook" title="facebook" target="_blank"><i
+										class="ui-facebook"></i></a>
+
+								<a href="https://www.instagram.com/rushirajgroup?igsh=MzRlODBiNWFlZA=="
+									class="social social-instagram" aria-label="instagram" title="instagram"
+									target="_blank"><i class="ui-instagram"></i></a>
+							</div>
+						</div>
+
+					</div> <!-- end flex-parent -->
+				</div> <!-- end container -->
+
+
+		</header>
+
+		<!-- <div class="content-wrapper content-wrapper--boxed oh"> -->
+
+		<!-- Page Title -->
+		<section class="page-title bg-dark-overlay text-center"
+			style="background-image: url('IMGS/Rushiraj bLOGS.png');">
+			<div class="container">
+				<div class="page-title__holder">
+					<h1 class="page-title__title">Blogs Us</h1>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- Blog -->
+		<div class="container">
+			<h3>The Heartbeat of Modern Living in Nashik</h3>
+			<div class="box">
+				<p>Welcome to the Rushiraj Builders blog, your go-to source for all things related to modern living,
+					innovative architecture, and the vibrant lifestyle in Nashik. As pioneers in the real estate
+					industry, we’re excited to share insights, stories, and updates that reflect our commitment to
+					excellence and our passion for creating spaces that inspire. Whether you're a current homeowner, a
+					potential buyer, or simply someone interested in the real estate market, this blog is designed to
+					provide you with valuable information and a glimpse into the world of Rushiraj Builders.</p>
+			</div>
+		</div>
+
+		<div class="container">
+			<h3>Why Nashik is the Perfect Place to Call Home
+				Nashik</h3>
+			<div class="box">
+				<p>often referred to as the Wine Capital of India, is a city that beautifully blends tradition with
+					modernity. Nestled in the picturesque Western Ghats, Nashik offers a unique quality of life with its
+					pleasant climate, scenic landscapes, and rich cultural heritage. The city is renowned for its
+					thriving wine industry, ancient temples, and vibrant festivals. But Nashik is not just about its
+					glorious past; it is also a city on the move, with rapid infrastructure development, excellent
+					educational institutions, and a growing industrial sector. In this blog, we’ll explore the unique
+					aspects that make Nashik an ideal place to live, work, and play, highlighting its strategic
+					location, burgeoning job market, and the seamless blend of urban and rural life.
+				</p>
+			</div>
+		</div>
+
+
+
+		<div class="container">
+			<h3>Our Projects: Building Dreams, Creating Legacies
+			</h3>
+			<div class="box">
+				<p>At Rushiraj Builders, we take immense pride in our diverse portfolio of projects that cater to
+					various needs and preferences. Our commitment to quality and innovation is reflected in every
+					project we undertake. Whether you’re looking for a serene residential community, a bustling
+					commercial hub, or luxurious living spaces, we have something for everyone. In the coming posts, we
+					will highlight some of our flagship projects, sharing detailed insights and the stories behind their
+					creation. From conceptualization to completion, you’ll get an inside look at the meticulous
+					planning, architectural brilliance, and the dedication that goes into building your dream home.
+				</p>
+			</div>
+		</div>
+
+		<div class="container">
+			<h3>The Heartbeat of Modern Living in Nashik</h3>
+			<div class="box">
+				<p>Welcome to the Rushiraj Builders blog, your go-to source for all things related to modern living,
+					innovative architecture, and the vibrant lifestyle in Nashik. As pioneers in the real estate
+					industry, we’re excited to share insights, stories, and updates that reflect our commitment to
+					excellence and our passion for creating spaces that inspire. Whether you're a current homeowner, a
+					potential buyer, or simply someone interested in the real estate market, this blog is designed to
+					provide you with valuable information and a glimpse into the world of Rushiraj Builders.</p>
+			</div>
+		</div>
+
+		<div class="container">
+			<h3>Sustainable Living: Our Commitment to the Environment
+			</h3>
+			<div class="box">
+				<p>Sustainability is at the core of our philosophy. We believe in building homes and communities that
+					not only meet the needs of today but also safeguard the environment for future generations. Our blog
+					will delve into our green building practices, energy-efficient designs, and how we incorporate
+					sustainable materials in our construction processes. Learn about our initiatives to reduce carbon
+					footprints, the implementation of rainwater harvesting systems, solar power integration, and our
+					efforts to create green spaces that enhance the quality of life for our residents. We’ll also share
+					tips and ideas on how you can contribute to a sustainable lifestyle.
+				</p>
+			</div>
+		</div>
+
+
+		<div class="container">
+			<h3>Real Estate Trends: Keeping You Informed
+			</h3>
+			<div class="box">
+				<p>The real estate market is dynamic and ever-evolving. Staying updated with the latest trends is
+					crucial whether you’re a first-time homebuyer, a seasoned investor, or simply curious about the real
+					estate landscape. Our blog will keep you informed about the latest trends, investment opportunities,
+					and market insights. We’ll cover topics such as market forecasts, government policies affecting real
+					estate, emerging locations, and innovative technologies transforming the industry. Our expert
+					analysis will provide valuable information to help you make informed decisions and stay ahead in the
+					competitive real estate market.
+
+				</p>
+			</div>
+		</div>
+
+		<div class="container">
+			<h3>Lifestyle Tips: Enhancing Your Living Experience
+			</h3>
+			<div class="box">
+				<p>Beyond bricks and mortar, we’re passionate about enhancing your overall living experience. Our blog
+					will offer a variety of lifestyle tips that help you make the most of your Rushiraj home. From
+					interior design tips to community events and wellness advice, we aim to enrich your day-to-day
+					living. Discover creative ways to decorate your space, learn about the latest home automation
+					technologies, and get advice on maintaining a healthy and balanced lifestyle. We’ll also spotlight
+					local attractions, dining options, recreational activities, and cultural events that make living in
+					Nashik a delightful experience.
+				</p>
+			</div>
+		</div>
+
+		<div class="container">
+			<h3>The Heartbeat of Modern Living in Nashik</h3>
+			<div class="box">
+				<p>Welcome to the Rushiraj Builders blog, your go-to source for all things related to modern living,
+					innovative architecture, and the vibrant lifestyle in Nashik. As pioneers in the real estate
+					industry, we’re excited to share insights, stories, and updates that reflect our commitment to
+					excellence and our passion for creating spaces that inspire. Whether you're a current homeowner, a
+					potential buyer, or simply someone interested in the real estate market, this blog is designed to
+					provide you with valuable information and a glimpse into the world of Rushiraj Builders.</p>
+			</div>
+		</div>
+
+		<div class="container">
+			<h3>Meet Our Team: The People Behind the Projects
+			</h3>
+			<div class="box">
+				<p>Get to know the dedicated professionals who bring our projects to life. In our “Meet the Team”
+					series, we’ll introduce you to the architects, engineers, designers, and staff members who work
+					tirelessly to ensure every Rushiraj project exceeds expectations. Learn about their backgrounds,
+					their roles in the company, and their personal stories. This series will give you a deeper
+					appreciation for the collective effort and expertise that go into creating your perfect home. We
+					believe that the success of any project lies in the hands of its creators, and we are proud to
+					showcase the talented individuals who form the backbone of Rushiraj Builders.
+
+				</p>
+			</div>
+		</div>
+
+		<div class="container">
+			<h3>Customer Stories: Hear from Our Happy Homeowners
+			</h3>
+			<div class="box">
+				<p>Our customers are at the heart of everything we do. We take great pride in the satisfaction and
+					happiness of our homeowners. In this section, we’ll share inspiring stories and testimonials from
+					our homeowners, showcasing their experiences and the joy of living in a Rushiraj Builders home.
+					These stories reflect our commitment to quality, trust, and customer satisfaction. Whether it’s the
+					joy of moving into a first home, the comfort of a well-designed living space, or the sense of
+					community in our residential complexes, our customers’ stories highlight the impact of our work on
+					their lives.
+				</p>
+			</div>
+		</div>
+
+
+		<div class="container">
+			<h3>Upcoming Events and Announcements
+			</h3>
+			<div class="box">
+				<p>Stay connected with us through our blog for all the latest updates on upcoming events, project
+					launches, and important announcements. Be the first to know about exclusive offers, special events,
+					and community gatherings. We’ll keep you informed about our participation in industry exhibitions,
+					real estate fairs, and other events where you can meet us in person and learn more about our
+					projects. Our announcements section will also cover key milestones, such as project completions,
+					awards, and recognitions that underscore our commitment to excellence.</p>
+			</div>
+		</div>
+
+
+
+
+
+
+		</div>
+		</section> <!-- end blog -->
+
+
+		<!-- Footer -->
+		<footer class="footer bg-dark-overlay" style="background-image: url(img/footer/1.jpg);">
+			<div class="container-fluid">
+				<div class="footer__widgets">
+					<div class="row">
+
+						<div class="col-lg-3 col-md-3">
+							<div class="widget widget-about-us">
+								<!-- Logo -->
+								<a href="index.html" class="logo-container flex-child">
+									<img class="logo" src="img/Rushiraj Logo-footer.png" srcset="img/Rushiraj Logo-footer.png 1x, img/Rushiraj Logo-footer.png 2x" alt="logo">
+									
+								</a>
+							</div>
+						</div> <!-- end logo -->
+
+						<div class="col-lg-2 col-md-3">
+							<div class="widget widget_nav_menu">
+								<ul>
+									<li><a href="about.html">About</a></li>
+									<li><a href="residentisi- completed.html">Project</a></li>
+									<li><a href="blog.html">Blog</a></li>
+									<li><a href="contact.html">Contact</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-lg-2 col-md-3">
+							<div class="widget widget_nav_menu">
+								<!-- <h5 class="contact__title">Melbourne Office</h5> -->
+								<ul class="contact__items">
+									<li class="contact__item">
+										<span class="contact__item-label">Address:</span>
+										<address>RUSHIRAJ HOUSE, Behind Kotak Mahindra Bank, Kulkarni Baug, HDFC Bank Road, Thatte Nagar, <br> Nashik MH 422005 IN.
+										</address>
+									</li>
+									<!-- <li class="contact__item">
+										<span class="contact__item-label">Phone: </span>
+										<a href="tel:+1-800-1554-456-123">+ 1 (800) 155 4561</a>
+									</li>
+									<li class="contact__item">
+										<span class="contact__item-label">Email: </span>
+										<a href="mailto:themesupport@gmail.com">themesupport@gmail.com</a>
+									</li> -->
+								</ul>
+							</div>
+						</div>
+
+
+
+						<div class="col-lg-3 col-md-3">
+							<div class="widget">
+								<div class="socials">
+									
+										<a href="https://www.facebook.com/rushirajgroup/" class="social social-facebook" aria-label="facebook" title="facebook"
+										target="_blank"><i class="ui-facebook"></i></a>
+									
+										<a href="https://www.instagram.com/rushirajgroup?igsh=MzRlODBiNWFlZA==" class="social social-instagram" aria-label="instagram" title="instagram"
+										target="_blank"><i class="ui-instagram"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> <!-- end container -->
+
+			<div class="footer__bottom" style="padding-bottom: 10px;padding-top: 10px;">
+				<div class="container-fluid text-right text-md-center">
+					<span class="copyright">
+						&copy; Since 1987 <a href="index.html">Rushiraj Builders</a>
+					</span>
+				</div>
+			</div> 
+		</footer> <!-- end footer -->
+
+		<div id="back-to-top">
+			<a href="#top"><i class="ui-arrow-up"></i></a>
+		</div><!-- end content wrapper -->
+	</main> <!-- end main wrapper -->
+
+
+	<!-- jQuery Scripts -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/scripts.js"></script>
+
+</body>
+
+</html>

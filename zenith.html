@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title> Rushiraj Zenith</title>
+
+	<meta charset="utf-8">
+	<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="description" content="">
+
+	<!-- Google Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Barlow:400,600%7COpen+Sans:400,400i,700' rel='stylesheet'>
+
+	<!-- Css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/font-icons.css" />
+	<link rel="stylesheet" href="revolution/css/settings.css" />
+	<link rel="stylesheet" href="css/style.css" />
+
+	<!-- Favicons -->
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<link rel="apple-touch-icon" href="img/apple-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/a.png">
+
+	<link rel="stylesheet" href="style2.css">
+
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: "Open Sans", sans-serif;
+		}
+
+		.project {
+			padding: 20px;
+			background-color: white;
+			/* Background color for the section */
+		}
+
+		.custom-project {
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 20px;
+			background-color: white;
+			border-radius: 10px;
+			box-shadow: 0 2px 4px(0, 0, 0, 0.1);
+		}
+
+		.project-info {
+			text-align: center;
+		}
+
+		.project-info h1 {
+			font-size: 2.5em;
+			margin-bottom: 20px;
+			color: #333;
+			/* Color for the heading */
+
+		}
+
+		.highlight {
+			margin-bottom: 20px;
+		}
+
+		.highlight h4 {
+			font-size: 1.5em;
+			color: #444;
+			/* Color for the subheadings */
+			margin-bottom: 10px;
+		}
+
+		.highlight p {
+			font-size: 1.2em;
+			line-height: 1.6;
+			color: #666;
+			text-align: justify;
+			/* Color for the paragraphs */
+		}
+
+		** ** ** .custom-project-section {
+			padding: 20px;
+			background-color: white;
+		}
+
+		.custom-project {
+			max-width: 800px;
+			margin: 0 auto;
+			background-color: white;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+			border-radius: 8px;
+			overflow: hidden;
+		}
+
+		.custom-info {
+			padding: 20px;
+		}
+
+		.custom-info h1 {
+			font-size: 2em;
+			margin-bottom: 20px;
+			text-align: center;
+		}
+
+		.highlight {
+			background-color: white;
+			padding: 15px;
+			border-radius: 8px;
+			margin-bottom: 20px;
+		}
+
+		.center-text {
+			text-align: center;
+			font-size: 1.2em;
+		}
+
+		.centered-list {
+			list-style-type: none;
+			padding: 0;
+		}
+
+		.centered-list li {
+			padding: 10px 0;
+			font-size: 1.1em;
+		}
+
+		.centered-list li p {
+			margin: 0;
+		}
+
+		.centered-list li p strong {
+			display: block;
+			font-weight: bold;
+			margin-bottom: 5px;
+		}
+
+		.page-title {
+			background-size: cover;
+			background-position: center;
+			width: 100%;
+			height: 600px;
+		}
+
+		.page-title__title {
+			font-size: 2rem;
+			color: #fff;
+			margin-top: 20%;
+		}
+
+		@media (max-width: 768px) {
+			.page-title {
+				height: 400px;
+			}
+
+			.page-title__title {
+				font-size: 1.5rem;
+				margin-top: 25%;
+			}
+		}
+
+		@media (max-width: 480px) {
+			.page-title {
+				height: 300px;
+			}
+
+			.page-title__title {
+				font-size: 1.2rem;
+				margin-top: 30%;
+			}
+		}
+
+		.page-title {
+			width: 100%;
+			height: 600px;
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			position: relative;
+		}
+
+		.bg-overlay::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			/* background-color: rgba(0, 0, 0, 0.5); */
+			/* Dark overlay */
+		}
+
+		@media (max-width: 1200px) {
+			.page-title {
+				height: 500px;
+			}
+		}
+
+		@media (max-width: 992px) {
+			.page-title {
+				height: 400px;
+			}
+		}
+
+		@media (max-width: 768px) {
+			.page-title {
+				height: 300px;
+			}
+		}
+
+		@media (max-width: 576px) {
+			.page-title {
+				height: 200px;
+			}
+		}
+
+		.page-title__holder {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			height: 100%;
+			position: relative;
+			z-index: 1;
+		}
+
+		.page-title__title {
+			color: white;
+			font-size: 2rem;
+			text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+		}
+
+		.container {
+			width: 100%;
+			padding-right: 15px;
+			padding-left: 15px;
+			margin-right: auto;
+			margin-left: auto;
+		}
+
+		@media (min-width: 576px) {
+			.container {
+				max-width: 540px;
+			}
+		}
+
+		@media (min-width: 768px) {
+			.container {
+				max-width: 720px;
+			}
+		}
+
+		@media (min-width: 992px) {
+			.container {
+				max-width: 960px;
+			}
+		}
+
+		@media (min-width: 1200px) {
+			.container {
+				max-width: 1140px;
+			}
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<!-- Preloader -->
+	<div class="loader-mask">
+		<div class="loader">
+			"Loading..."
+		</div>
+	</div>
+
+	<main class="main-wrapper">
+
+		<!-- Navigation -->
+		<header class="nav">
+			<div class="nav__holder nav--sticky ">
+				<div class="container-fluid nav__container nav__container--side-padding">
+					<div class="flex-parent">
+
+						<div class="nav__header">
+							<!-- Logo -->
+							<a href="index.html" class="logo-container flex-child ">
+								<img src="img/Rushiraj Logo.png"
+									srcset="img/Rushiraj Logo.png 1x, img/Rushiraj Logo.png 2x" alt="logo">
+
+							</a>
+
+							<!-- Mobile toggle -->
+							<button type="button" class="nav__icon-toggle" id="nav__icon-toggle" data-toggle="collapse"
+								data-target="#navbar-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="nav__icon-toggle-bar"></span>
+								<span class="nav__icon-toggle-bar"></span>
+								<span class="nav__icon-toggle-bar"></span>
+							</button>
+						</div>
+
+						<!-- Navbar -->
+						<nav id="navbar-collapse" class="nav__wrap collapse navbar-collapse">
+							<ul class="nav__menu">
+								<li>
+									<a href="index.html" aria-haspopup="true">Home</a>
+									<!-- <i class="ui-arrow-down nav__dropdown-trigger" role="button" aria-haspopup="true" aria-expanded="false"></i> -->
+								</li>
+								<li>
+									<a href="about.html" aria-haspopup="true">About Us</a>
+									<!-- <i class="ui-arrow-down nav__dropdown-trigger" role="button" aria-haspopup="true" aria-expanded="false"></i> -->
+								</li>
+								<li>
+									<a href="residentisi- completed.html" aria-haspopup="true">Projects</a>
+									<!--<i class="ui-arrow-down nav__dropdown-trigger" role="button" aria-haspopup="true" aria-expanded="false"></i> -->
+
+								</li>
+								<li>
+									<a href="Highland.html" aria-haspopup="true">Project Highlands</a>
+									<!--<i class="ui-arrow-down nav__dropdown-trigger" role="button" aria-haspopup="true" aria-expanded="false"></i> -->
+
+								</li>
+								<li>
+									<a href="zenith.html" aria-haspopup="true"> Project Zenith</a>
+									<!--	<i class="ui-arrow-down nav__dropdown-trigger" role="button" aria-haspopup="true" aria-expanded="false"></i>-->
+
+								</li>
+
+
+
+								<li>
+									<a href="blog.html" aria-haspopup="true">Blog</a>
+									<!-- <i class="ui-arrow-down nav__dropdown-trigger" role="button" aria-haspopup="true" aria-expanded="false"></i> -->
+									<!-- <ul class="nav__dropdown-menu">
+										<li><a href="blog-masonry.html">Blog Masonry</a></li>
+										<li><a href="blog.html">Blog Standard</a></li>
+										<li><a href="single-post.html">Single Post</a></li>
+									</ul> -->
+								</li>
+								<li>
+									<a href="contact.html" aria-haspopup="true">Contact Us</a>
+									<!-- <i class="ui-arrow-down nav__dropdown-trigger" role="button" aria-haspopup="true" aria-expanded="false"></i> -->
+								</li>
+							</ul> <!-- end menu -->
+							<div class="nav__phone nav__phone--mobile d-lg-none">
+								<span class="nav__phone-text">Call us:</span>
+								<a href="tel:1-800-995-3959" class="nav__phone-number">+91 9604734133</a>
+							</div>
+
+							<div class="nav__socials nav__socials--mobile d-lg-none">
+								<div class="socials">
+
+									<a href="https://www.facebook.com/rushirajgroup/" class="social social-facebook"
+										aria-label="facebook" title="facebook" target="_blank"><i
+											class="ui-facebook"></i></a>
+
+									<a href="https://www.instagram.com/rushirajgroup?igsh=bDFxNXkzZ2VxYTB3"
+										class="social social-instagram" aria-label="instagram" title="instagram"
+										target="_blank"><i class="ui-instagram"></i></a>
+								</div>
+							</div>
+						</nav> <!-- end nav-wrap -->
+
+						<div class="nav__phone nav--align-right d-none d-lg-block" style="width: 246px;">
+							<span class="nav__phone-text">Call us:</span>
+							<a href="tel:1-800-995-3959" class="nav__phone-number">+91 9604734133</a>
+						</div>
+						<div class="nav__socials d-none d-lg-block">
+							<div class="socials">
+								<div class="socials">
+
+									<a href="https://www.facebook.com/rushirajgroup/" class="social social-facebook"
+										aria-label="facebook" title="facebook" target="_blank"><i
+											class="ui-facebook"></i></a>
+
+									<a href="https://www.instagram.com/rushirajgroup?igsh=bDFxNXkzZ2VxYTB3"
+										class="social social-instagram" aria-label="instagram" title="instagram"
+										target="_blank"><i class="ui-instagram"></i></a>
+								</div>
+							</div>
+						</div>
+
+					</div> <!-- end flex-parent -->
+				</div> <!-- end container -->
+
+
+		</header><!-- end navigation -->
+
+
+
+		<!-- Page Title -->
+		<section class="page-title bg-overlay text-center"
+			style="background-image: url('IMGS/Rushiraj\ Zenith\ Web\ Slider1.png');">
+			<div class="container">
+				<div class="page-title__holder">
+					<h1 class="page-title__title"></h1>
+				</div>
+			</div>
+		</section>
+
+		<!-- end page title -->
+
+		<!-- Intro -->
+		<section class="project">
+			<div class="custom-project">
+				<div class="project-info">
+					<h1>Rushiraj Zenith: Elevate Your Lifestyle
+					</h1>
+					<div class="highlight">
+						<h4>Welcome to Rushiraj Zenith
+						</h4>
+						<p>Discover a new pinnacle of luxury living with Rushiraj Zenith. Located in the heart of
+							Nashik, Rushiraj Zenith offers an unparalleled living experience with state-of-the-art
+							amenities, exquisite design, and a community that values quality and comfort.</p>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+
+		<section class="project">
+			<div class="custom-project">
+				<div class="project-info">
+					<h1>Exquisite Living Spaces
+
+					</h1>
+					<div class="highlight">
+
+						<p>Our apartments are designed to provide a perfect blend of elegance and functionality. Each
+							unit is meticulously crafted to ensure maximum natural light and ventilation, offering you a
+							serene and comfortable living environment.
+						</p>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<section class="custom-project-section">
+			<div class="custom-project">
+				<div class="custom-info">
+					<h1>World-Class Amenities</h1>
+					<div class="highlight">
+						<p class="center-text">Rushiraj Zenith provides a range of amenities that cater to your
+							lifestyle needs</p>
+						<ul class="centered-list">
+							<li>
+								<p><strong>Clubhouse:</strong> A well-equipped clubhouse for social gatherings and
+									recreational activities.</p>
+							</li>
+							<li>
+								<p><strong>Swimming Pool:</strong> Dive into our pristine swimming pool and unwind after
+									a long day.</p>
+							</li>
+							<li>
+								<p><strong>Fitness Center:</strong> Stay fit and healthy with our modern gym facilities.
+								</p>
+							</li>
+							<li>
+								<p><strong>Children’s Play Area:</strong> A safe and fun space for your children to play
+									and make new friends.</p>
+							</li>
+							<li>
+								<p><strong>Landscaped Gardens:</strong> Enjoy a stroll through our beautifully
+									landscaped gardens.</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+		<section class="custom-project-section">
+			<div class="custom-project">
+				<div class="custom-info">
+					<h1>Prime Location</h1>
+					<div class="highlight">
+						<p class="center-text">Situated in a prime location, Rushiraj Zenith offers easy access to:</p>
+						<ul class="centered-list">
+							<li>
+								<p>Major educational institutions</p>
+							</li>
+							<li>
+								<p>Healthcare facilities</p>
+							</li>
+							<li>
+								<p>Shopping centers
+							</li>
+							<li>
+								<p>Restaurants and entertainment hubs</p>
+							</li>
+							<li>
+								<p>Public transport links</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+		<section class="custom-project-section">
+			<div class="custom-project">
+				<div class="custom-info">
+					<h1>Security and Convenience</h1>
+					<div class="highlight">
+						<p class="center-text">Your safety and convenience are our top priorities. Rushiraj Zenith
+							features:</p>
+						<ul class="centered-list">
+							<li>
+								<p>24/7 security with CCTV surveillanc</p>
+							</li>
+							<li>
+								<p>Ample parking space</p>
+							</li>
+							<li>
+								<p>Power backup for common areas.</p>
+							</li>
+							<li>
+								<p>High-speed elevators.</p>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+
+
+
+
+
+		<section class="project">
+			<div class="custom-project">
+				<div class="project-info">
+					<h1>Why Choose Rushiraj Zenith?
+
+
+					</h1>
+					<div class="highlight">
+
+						<p>At Rushiraj Zenith, we believe in providing a lifestyle that goes beyond mere living spaces.
+							Our commitment to quality, combined with our attention to detail, ensures that you and your
+							family enjoy a truly enriching living experience.
+
+						</p>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+
+
+
+		<!-- Contact -->
+		<section class="section-wrap">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4">
+						<div class="contact">
+							<h5 class="contact__title">Contact Us</h5>
+							<ul class="contact__items">
+								<li class="contact__item">
+									<span class="contact__item-label">Address:</span>
+									<address>RUSHIRAJ HOUSE, Behind Kotak Mahindra Bank, Kulkarni Baug, HDFC Bank Road,
+										Thatte Nagar,
+										Nashik MH 422005 IN.</address>
+								</li>
+								<li class="contact__item">
+									<span class="contact__item-label">Phone: </span>
+									<a href="tel:+1-800-1554-456-123">+91 9604734133</a>
+								</li>
+								<li class="contact__item">
+									<span class="contact__item-label">Email: </span>
+									<a href="mailto:themesupport@gmail.com">info@rushirajgroup.com</a>
+								</li>
+							</ul>
+
+							<!-- <h5 class="contact__title mt-40">Follow Us</h5>
+											<div class="socials">
+												<a href="#" class="social social-twitter" aria-label="twitter" title="twitter" target="_blank"><i class="ui-twitter"></i></a>
+												<a href="#" class="social social-facebook" aria-label="facebook" title="facebook" target="_blank"><i class="ui-facebook"></i></a>
+												<a href="#" class="social social-youtube" aria-label="youtube" title="google plus" target="_blank"><i class="ui-youtube"></i></a>
+												<a href="#" class="social social-instagram" aria-label="instagram" title="instagram" target="_blank"><i class="ui-instagram"></i></a>
+											</div>
+			 -->
+						</div>
+					</div>
+					<div class="col-lg-7 offset-lg-1">
+						<h2 class="section-title">WHAT CAN WE HELP YOU?</h2>
+						<p class="mb-40">If you have any question about project cost, get in touch.</p>
+						<!-- Contact Form -->
+						<form id="contact-form" class="contact-form material" method="post" action="#">
+
+							<div class="row">
+								<div class="col-lg-6">
+									<!-- Name -->
+									<div class="material__form-group form-group">
+										<input type="text" name="name" id="name" class="form-input material__input"
+											required="">
+										<label for="name" class="material__label">Name
+											<abbr title="required" class="required">*</abbr>
+										</label>
+										<span class="material__underline"></span>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<!-- Email -->
+									<div class="material__form-group form-group">
+										<input type="email" name="email" id="email" class="form-input material__input"
+											required="">
+										<label for="email" class="material__label">Email
+											<abbr title="required" class="required">*</abbr>
+										</label>
+										<span class="material__underline"></span>
+									</div>
+								</div>
+							</div>
+
+							<!-- Subject -->
+							<div class="material__form-group form-group">
+								<input type="text" name="subject" id="subject" class="form-input material__input">
+								<label for="subject" class="material__label">Subject
+								</label>
+								<span class="material__underline"></span>
+							</div>
+
+							<div class="material__form-group form-group">
+								<textarea id="message" name="message" rows="7" class="form-input material__input"
+									required=""></textarea>
+								<label for="message" class="material__label">Message
+									<abbr title="required" class="required">*</abbr>
+								</label>
+								<span class="material__underline"></span>
+							</div>
+
+							<input type="submit" class="btn btn--lg btn--color btn--button" value="Send Message"
+								id="submit-message">
+							<div id="msg" class="message"></div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section> <!-- end contact -->
+
+		<!-- Footer -->
+		<footer class="footer bg-dark-overlay" style="background-image: url(img/footer/1.jpg);">
+			<div class="container-fluid">
+				<div class="footer__widgets">
+					<div class="row">
+
+						<div class="col-lg-3 col-md-3">
+							<div class="widget widget-about-us">
+								<!-- Logo -->
+								<a href="index.html" class="logo-container flex-child">
+									<img class="logo" src="img/Rushiraj Logo-footer.png"
+										srcset="img/Rushiraj Logo-footer.png 1x, img/Rushiraj Logo-footer.png 2x"
+										alt="logo">
+
+								</a>
+							</div>
+						</div> <!-- end logo -->
+
+						<div class="col-lg-2 col-md-3">
+							<div class="widget widget_nav_menu">
+								<ul>
+									<li><a href="about.html">About</a></li>
+									<li><a href="residentisi- completed.html">Project</a></li>
+									<li><a href="blog.html">Blog</a></li>
+									<li><a href="contact.html">Contact</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-lg-2 col-md-3">
+							<div class="widget widget_nav_menu">
+								<ul>
+									<li><a href="#">Privacy Policy</a></li>
+									<li><a href="#">Terms &amp; Conditions</a></li>
+									<li><a href="#">Career</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-lg-2 col-md-3">
+							<div class="widget widget_nav_menu">
+								<!-- <h5 class="contact__title">Melbourne Office</h5> -->
+								<ul class="contact__items">
+									<li class="contact__item">
+										<span class="contact__item-label">Address:</span>
+										<address>RUSHIRAJ HOUSE, Behind Kotak Mahindra Bank, Kulkarni Baug, HDFC Bank
+											Road, Thatte Nagar, <br> Nashik MH 422005 IN.
+										</address>
+									</li>
+									<!-- <li class="contact__item">
+										<span class="contact__item-label">Phone: </span>
+										<a href="tel:+1-800-1554-456-123">+ 1 (800) 155 4561</a>
+									</li>
+									<li class="contact__item">
+										<span class="contact__item-label">Email: </span>
+										<a href="mailto:themesupport@gmail.com">themesupport@gmail.com</a>
+									</li> -->
+								</ul>
+							</div>
+						</div>
+
+
+
+						<div class="col-lg-3 col-md-3">
+							<div class="widget">
+								<div class="socials">
+
+									<a href="https://www.facebook.com/rushirajgroup/" class="social social-facebook"
+										aria-label="facebook" title="facebook" target="_blank"><i
+											class="ui-facebook"></i></a>
+
+									<a href="https://www.instagram.com/rushirajgroup?igsh=MzRlODBiNWFlZA=="
+										class="social social-instagram" aria-label="instagram" title="instagram"
+										target="_blank"><i class="ui-instagram"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> <!-- end container -->
+
+			<div class="footer__bottom" style="padding-bottom: 10px;padding-top: 10px;">
+				<div class="container-fluid text-right text-md-center">
+					<span class="copyright">
+						&copy; Since 1987 <a href="index.html">Rushiraj Builders</a>
+					</span>
+				</div>
+			</div>
+		</footer> <!-- end footer -->
+
+		<div id="back-to-top">
+			<a href="#top"><i class="ui-arrow-up"></i></a>
+		</div>
+
+
+		</div> <!-- end content wrapper -->
+	</main> <!-- end main wrapper -->
+
+
+	<!-- jQuery Scripts -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/scripts.js"></script>
+
+</body>
+
+</html>

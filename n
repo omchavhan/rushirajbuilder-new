@@ -1,0 +1,71 @@
+[33mcommit 7b69de0d3573d02ed4b1cad587c080dcf4b220e7[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: ombhagyesh <ombhagyesh@gmail.com>
+Date:   Tue Jun 18 17:54:34 2024 +0530
+
+    update
+
+[33mcommit 76bd18876374f9033f006e5174e9deccfe724e47[m
+Author: ombhagyesh <ombhagyesh@gmail.com>
+Date:   Tue Jun 18 12:43:19 2024 +0530
+
+    slider videos add
+
+[33mcommit 42f71e57c0aeeaa3add13defab02b6e6af403723[m
+Author: ombhagyesh <ombhagyesh@gmail.com>
+Date:   Mon Jun 10 18:11:19 2024 +0530
+
+    update imges
+
+[33mcommit 4cfe726870adf741ed45857a48d1174039a57bfa[m
+Author: ombhagyesh <ombhagyesh@gmail.com>
+Date:   Mon Jun 10 18:05:20 2024 +0530
+
+    imga auto
+
+[33mcommit 86ef15586246458da40002ec74d35965107ec679[m
+Author: ombhagyesh <ombhagyesh@gmail.com>
+Date:   Mon Jun 10 15:49:43 2024 +0530
+
+    update contact page
+
+[33mcommit f18d846457a51f3703643ce094a4cc217ee18896[m
+Author: ombhagyesh <ombhagyesh@gmail.com>
+Date:   Mon Jun 10 15:01:56 2024 +0530
+
+    update about page
+
+[33mcommit f945394921824dd0cd7d69324ad0097f16032e7e[m
+Author: ombhagyesh <ombhagyesh@gmail.com>
+Date:   Sat Jun 8 15:24:32 2024 +0530
+
+    logo update
+
+[33mcommit 1b8b12b94cce87231e13f41f6c5aecd202196feb[m
+Author: ombhagyesh <ombhagyesh@gmail.com>
+Date:   Sat Jun 8 15:15:42 2024 +0530
+
+    header video update
+
+[33mcommit 5eab698874e0ba6cfe264751f479eedd15a6286b[m
+Author: ombhagyesh <ombhagyesh@gmail.com>
+Date:   Sat Jun 8 15:05:33 2024 +0530
+
+    header video update
+
+[33mcommit 13eaf331828584df0d6eacd24e62ecb2a3ed9a9e[m
+Author: ombhagyesh <ombhagyesh@gmail.com>
+Date:   Sat Jun 8 14:40:23 2024 +0530
+
+    header video update
+
+[33mcommit adf65e8b1fb6e555f4469ed1f620e7928dafa21e[m
+Author: ombhagyesh <ombhagyesh@gmail.com>
+Date:   Sat Jun 8 14:25:08 2024 +0530
+
+    update commit
+
+[33mcommit 0039875463245e282365e9c8f0d74aa98b1b7aec[m
+Author: ombhagyesh <ombhagyesh@gmail.com>
+Date:   Sat Jun 8 14:23:36 2024 +0530
+
+    first commit
